@@ -1,4 +1,4 @@
-ENV["SINATRA_ENV"] = "test"
+ENV['SINATRA_ENV'] = 'test'
 
 require_relative '../config/environment'
 require 'rack/test'
@@ -25,7 +25,7 @@ RSpec.configure do |config|
       example.run
     end
   end
-
+  config.tty = true
   config.order = 'default'
 end
 
